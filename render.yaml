@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: histoires-magiques-ai
+    env: python
+    buildCommand: pip install -r requirements_final.txt
+    startCommand: gunicorn app_final_complet:app
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: OPENAI_API_KEY
+        sync: false
+

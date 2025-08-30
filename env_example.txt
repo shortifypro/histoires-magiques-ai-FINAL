@@ -1,0 +1,22 @@
+# Variables d'environnement pour Histoires Magiques
+# Copier ce fichier en .env et remplir avec vos vraies valeurs
+
+# Clé API OpenAI (obligatoire)
+# Obtenir sur : https://platform.openai.com/api-keys
+OPENAI_API_KEY=sk-votre-cle-openai-ici
+
+# Clé secrète Flask (obligatoire)
+# Générer une clé aléatoire sécurisée
+FLASK_SECRET_KEY=votre-cle-secrete-aleatoire-ici
+
+# Environnement Flask
+FLASK_ENV=production
+
+# ElevenLabs (optionnel - pour audio premium)
+# ELEVENLABS_API_KEY=votre-cle-elevenlabs-ici
+
+# PayPal (optionnel - pour paiements)
+# PAYPAL_CLIENT_ID=votre-client-id-paypal
+# PAYPAL_CLIENT_SECRET=votre-secret-paypal
+# PAYPAL_MODE=sandbox  # ou 'live' pour production
+
